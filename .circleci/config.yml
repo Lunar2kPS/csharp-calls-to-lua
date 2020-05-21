@@ -11,4 +11,4 @@
        - checkout
        - run: ls
        - run: pwd
-       # - run: dotnet build
+       - run: dotnet build CSharpCallsToLua/CSharpCallsToLua.sln
