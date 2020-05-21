@@ -9,4 +9,6 @@
     
      steps:
        - checkout
-       - run: dotnet build
+       - ls
+       - pwd
+       # - run: dotnet build
