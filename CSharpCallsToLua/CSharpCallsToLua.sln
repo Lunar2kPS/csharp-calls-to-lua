@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCallsToLua", "CSharpCallsToLua.csproj", "{CE4C0970-276B-43DA-BEDF-634F6340E230}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCallsToLua", "CSharpCallsToLua.csproj", "{CEEBAD01-2849-4538-9451-876643CA58F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CE4C0970-276B-43DA-BEDF-634F6340E230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE4C0970-276B-43DA-BEDF-634F6340E230}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE4C0970-276B-43DA-BEDF-634F6340E230}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE4C0970-276B-43DA-BEDF-634F6340E230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEEBAD01-2849-4538-9451-876643CA58F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEEBAD01-2849-4538-9451-876643CA58F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEEBAD01-2849-4538-9451-876643CA58F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEEBAD01-2849-4538-9451-876643CA58F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5EEB9618-1C30-454B-B84F-29A9963ED63B}
+		SolutionGuid = {560853C1-C5D3-4D6A-86B9-3EC4CD1708F2}
 	EndGlobalSection
 EndGlobal
