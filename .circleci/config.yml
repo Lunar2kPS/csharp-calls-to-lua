@@ -12,7 +12,7 @@
        - run: ls
        - run: ls CSharpCallsToLua
        - run: pwd
-       - run: dotnet restore
+       - run: dotnet restore CSharpCallsToLua/CSharpCallsToLua.sln
        - run: ls
        - run: ls CSharpCallsToLua
        - run: dotnet build CSharpCallsToLua/CSharpCallsToLua.sln
