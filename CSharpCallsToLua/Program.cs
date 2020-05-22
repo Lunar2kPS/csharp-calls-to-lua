@@ -6,9 +6,6 @@ namespace CSharpCallsToLua {
 
 		public static void Main(string[] args) {
 			Console.WriteLine("Welcome to a demo program that calls Lua code from C#!");
-
-			dLua = new DynamicLua.DynamicLua();
-			dLua(@"print(""Hey from Lua!"")");
 		}
 	}
 }
