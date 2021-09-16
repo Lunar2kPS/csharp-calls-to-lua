@@ -1,17 +1,17 @@
 version: 2.1
 
 orbs:
-  win: circleci/windows@2.2.0
+    win: circleci/windows@2.2.0
 
 jobs:
-  build:
-    executor: win/default
+    build:
+        executor: win/default
 
-    steps:
-      - checkout
-      - run:
-        name: "Build Docker Image"
-        command: docker build -t 2kcarlos/csharp-calls-to-lua .
-      - run:
-        name: "Run Docker Container(s)"
-        command: docker-compose up
+        steps:
+          - checkout
+          - run:
+              name: "Build Docker Image"
+              command: docker build -t 2kcarlos/csharp-calls-to-lua .
+          - run:
+              name: "Run Docker Container(s)"
+              command: docker-compose up
