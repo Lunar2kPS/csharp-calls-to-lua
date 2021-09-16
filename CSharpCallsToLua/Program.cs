@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using NLua;
 
 namespace CSharpCallsToLua {
@@ -10,6 +11,8 @@ namespace CSharpCallsToLua {
 
             luaState = new Lua();
             luaState.DoString(@"print(""Hey from Lua!!!"")");
+
+            Thread.Sleep(5000);
         }
     }
 }
