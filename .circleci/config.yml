@@ -9,4 +9,9 @@ jobs:
 
     steps:
       - checkout
-      - run: dotnet build CSharpCallsToLua/CSharpCallsToLua.sln
+      - run:
+        name: "Build Docker Image"
+        command: docker build -t 2kcarlos/csharp-calls-to-lua .
+      - run:
+        name: "Run Docker Container(s)"
+        command: docker-compose up
