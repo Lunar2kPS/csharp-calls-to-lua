@@ -1,25 +1,14 @@
 version: 2.1
 
-orbs:
-    win: circleci/windows@2.2.0
-
 jobs:
     build:
-        executor: win/default
-
+        machine:
+          # Recommended machine image from https://circleci.com/docs/2.0/executor-intro/
+          # Includes Ubuntu 20.04, docker 19.03.13, docker-compose 1.27.4
+          image: ubuntu-2004:202010-01
+          docker_layer_caching: false
         steps:
           - checkout
-          # NOTE: These 2 run steps were given by https://circleci.com/docs/2.0/docker-compose/
-          # This allows us to use the docker-compose command!
-          - run:
-              name: Install Docker Compose
-              command: |
-                  curl -L https://github.com/docker/compose/releases/download/1.27.4/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
-                  chmod +x ~/docker-compose
-                  sudo mv ~/docker-compose /usr/local/bin/docker-compose
-          - setup_remote_docker:
-              docker_layer_caching: false
-
           - run:
               name: Build Docker Image
               command: docker build -t 2kcarlos/csharp-calls-to-lua .
