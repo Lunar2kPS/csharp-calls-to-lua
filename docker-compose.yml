@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 services:
   csharp-calls-to-lua:
     build:
@@ -6,3 +6,7 @@ services:
       dockerfile: Dockerfile
     image: 2kcarlos/csharp-calls-to-lua
     container_name: csharp-calls-to-lua
+    volumes:
+      - type: bind
+        source: ./docker-shared
+        target: /docker-shared
